@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3y3sqnis3g5f"]
+[gd_scene load_steps=8 format=3 uid="uid://b3y3sqnis3g5f"]
 
 [ext_resource type="Texture2D" uid="uid://c1dnj1esbjkuw" path="res://assets/sprites/knight.png" id="1_3vyb7"]
 
@@ -38,6 +38,10 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
+radius = 4.0
+height = 14.0
+
 [node name="player" type="CharacterBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -46,3 +50,7 @@ sprite_frames = SubResource("SpriteFrames_tuyoq")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.034808207
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_3vyb7")
