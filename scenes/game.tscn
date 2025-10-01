@@ -240,4 +240,4 @@ position = Vector2(185, 25)
 position = Vector2(57, -87)
 
 [node name="coin3" parent="." instance=ExtResource("4_lbhrr")]
-position = Vector2(264, -23)
+position = Vector2(398, 3)
