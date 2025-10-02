@@ -58,4 +58,5 @@ size_flags_vertical = 7
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
