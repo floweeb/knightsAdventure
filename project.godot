@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="knightAdventure"
-run/main_scene="uid://dqucgn1n8ulnl"
+run/main_scene="uid://cejgouum3qet3"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
+
+[gui]
+
+theme/custom_font="uid://bhyvab6pt7mwu"
 
 [rendering]
 
